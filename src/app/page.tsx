@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { app } from '@/lib/firebase';
 
 
 export default function Home() {
@@ -17,7 +16,7 @@ export default function Home() {
         {/* Overlay for readability */}
         <div className="absolute inset-0 " />
       </div>
-      <h1 className="text-5xl md:text-6xl font-extrabold mb-4 text-center">Hello, I'm Saul Serrano.</h1>
+      <h1 className="text-5xl md:text-6xl font-extrabold mb-4 text-center">Hello, I&apos;m Saul Serrano.</h1>
       <h2 className="text-2xl md:text-3xl font-semibold text-gray-400 mb-6 text-center">Aspiring Computer Engineer</h2>
       <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl text-center">
       I bridge the gap between code and circuitry—blending web development, embedded systems, and cybersecurity to create solutions that live both online and on the edge. From building hardware that reacts in real time to deploying secure applications in the cloud, I thrive in turning complex ideas into working systems.

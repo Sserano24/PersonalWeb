@@ -2,8 +2,7 @@
 
 import React, { useRef, useState } from "react";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
-import { FiCopy } from "react-icons/fi";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
 export default function ContactPage() {
@@ -27,7 +26,7 @@ export default function ContactPage() {
       );
       alert("Message sent successfully!");
       formRef.current.reset();
-    } catch (error) {
+    } catch {
       alert("Failed to send message. Please try again later.");
     }
   };
@@ -63,8 +62,8 @@ export default function ContactPage() {
         <div className="flex-1 p-8 flex flex-col justify-between">
           <div>
             <h2 className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">Get in Touch</h2>
-            <p className="mb-4 font-medium bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">I'd like to hear from you!</p>
-            <p className="text-gray-300 mb-8">If you have any questions, collaboration ideas, or simply want to connect, feel free to reach out through my contact form. I'm always open to discussing projects, sharing hobbies, chatting about blog topics, or grabbing a virtual coffee.</p>
+            <p className="mb-4 font-medium bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">I&apos;d like to hear from you!</p>
+            <p className="text-gray-300 mb-8">If you have any questions, collaboration ideas, or simply want to connect, feel free to reach out through my contact form. I&apos;m always open to discussing projects, sharing hobbies, chatting about blog topics, or grabbing a virtual coffee.</p>
           </div>
 
           <div className="flex gap-4 mt-4">

@@ -1,6 +1,6 @@
 "use client";
 
-import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
+// import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from "next/link";
 
@@ -19,9 +19,9 @@ const navLinks = [
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [isDark, setIsDark] = useState(true);
+  // const [isDark, setIsDark] = useState(true);
   const pathname = usePathname();
-  const [mounted, setMounted] = useState(false);
+  // const [mounted, setMounted] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -35,18 +35,18 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Theme toggle logic
-  useEffect(() => {
-    if (isDark) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [isDark]);
+  // // Theme toggle logic
+  // useEffect(() => {
+  //   if (isDark) {
+  //     document.documentElement.classList.add("dark");
+  //   } else {
+  //     document.documentElement.classList.remove("dark");
+  //   }
+  // }, [isDark]);
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+  // useEffect(() => {
+  //   setMounted(true);
+  // }, []);
 
   return (
     <nav className="fixed top-4 z-50 w-full flex justify-center pointer-events-none">

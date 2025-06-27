@@ -23,9 +23,9 @@ const AboutPage = () => {
         <div className="flex-[1.3] flex flex-col justify-center text-left">
           <h1 className="text-5xl font-bold mb-10 bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 bg-clip-text text-transparent">About Me</h1>
           <p className="mb-12 text-gray-200 text-xl max-w-2xl leading-relaxed">
-            I'm a student committed to continuous self-development, growth, and meaningful connection. My goal is to become a thoughtful and humble leader—one who values dedication, collaboration, and integrity.<br /><br />
-            I'm passionate about applying my diverse skill set to any role I take on, especially in areas such as computer organization, cybersecurity awareness, and the ethical application of artificial intelligence. I believe AI should be used as a tool to enhance productivity and creativity—not to replace human potential.<br /><br />
-            Whether it's through technical challenges or team collaboration, I'm driven by purpose and eager to keep learning, building, and contributing.
+            I&apos;m a student committed to continuous self-development, growth, and meaningful connection. My goal is to become a thoughtful and humble leader—one who values dedication, collaboration, and integrity.<br /><br />
+            I&apos;m passionate about applying my diverse skill set to any role I take on, especially in areas such as computer organization, cybersecurity awareness, and the ethical application of artificial intelligence. I believe AI should be used as a tool to enhance productivity and creativity—not to replace human potential.<br /><br />
+            Whether it&apos;s through technical challenges or team collaboration, I&apos;m driven by purpose and eager to keep learning, building, and contributing.
           </p>
           <a
             href="/Resume.pdf"
