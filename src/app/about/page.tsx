@@ -39,7 +39,7 @@ const AboutPage = () => {
           </a>
         </div>
         {/* Right: Circular Image with Gradient Accent */}
-        <div className="flex-[1] flex items-center justify-center relative min-w-[260px] -mt-24">
+        <div className="flex-[1] flex items-center justify-center relative min-w-[260px] mt-16 lg:-mt-24">
           {/* Gradient accent circle */}
           <div className="absolute top-4 right-4 w-64 h-64 rounded-full z-0 bg-gradient-to-tr from-blue-500 via-purple-500 to-indigo-500" />
           {/* Profile image */}

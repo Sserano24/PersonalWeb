@@ -4,21 +4,17 @@ import Image from "next/image";
 const projects: Project[] = [
   {
     title: "CrowdX",
-    description: "A crowdfunding platform where users can create campagins and collect contributions via cryptocurrency or credit/debit payments",
+    description: "A crowdfunding platform where users can create campagins and collect contributions via cryptocurrency or credit/debit payments. My team and I plan to deploy this project by Decemember 2025.",
     image: "/eth.png", // Replace with your image path or leave blank
-    button1Label: "Link",
-    button1Href: "https://google.com",
-    button2Label: "Github",
-    button2Href: "https://github.com/Sserano24/CrowdX2-frontend.git"
+    button1Label: "Github",
+    button1Href: "https://github.com/Sserano24/CrowdX2-frontend.git"
   },
   {
     title: "Stinger Sprint",
     description: "Built a 2D arcade game in Pygame with real-time input, animation, and collision detection. Worked in a SCRUM-based team, contributing to sprint planning, game mechanics, and UI design. Used Git/GitHub for version control and collaborative development.",
     image: "/frog.png",
-    button1Label: "Play",
-    button1Href: "https://google.com",
-    button2Label: "Github",
-    button2Href: "https://github.com/NukaCola27/CSC131_Team3.git"
+    button1Label: "Github",
+    button1Href: "https://github.com/NukaCola27/CSC131_Team3.git"
   },
   {
     title: "Operating System Development",
@@ -67,8 +63,12 @@ const ProjectsPage = () => {
       </div>
       {/* Black bar behind navbar */}
       <div className="absolute top-0 left-0 w-full h-[100px] bg-black z-0" />
+      {/* Title */}
+      <div className="relative z-10 pt-32 max-w-7xl mx-auto px-4 pb-4">
+        <h1 className="text-4xl font-bold mb-10 bg-gradient-to-r from-blue-400 via-white-400 to-indigo-400 bg-clip-text text-transparent text-center">Projects</h1>
+      </div>
       {/* The rest of your content */}
-      <div className="relative z-10 pt-32 max-w-7xl mx-auto px-4">
+      <div className="relative z-10 max-w-7xl mx-auto px-4">
         <ProjectsGrid projects={projects} />
       </div>
     </div>

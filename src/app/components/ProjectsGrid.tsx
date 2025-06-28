@@ -90,7 +90,7 @@ const ProjectsGrid: React.FC<ProjectsGridProps> = ({ projects }) => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 30 }}
                   transition={{ duration: 0.4 }}
-                  className="flex flex-col items-center w-full h-full justify-center absolute top-0 left-0"
+                  className="flex flex-col items-center w-full h-full justify-center absolute top-0 left-0 px-6"
                   style={{ minHeight: '100%', minWidth: '100%' }}
                 >
                   <h3
