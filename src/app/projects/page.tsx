@@ -4,7 +4,7 @@ import Image from "next/image";
 const projects: Project[] = [
   {
     title: "CrowdX",
-    description: "A crowdfunding platform where users can create campagins and collect contributions via cryptocurrency or credit/debit payments. My team and I plan to deploy this project by Decemember 2025.",
+    description: "A crowdfunding platform where users can create campagins and collect contributions via cryptocurrency or credit/debit payments. My team and I plan to deploy this project by December 2025.",
     image: "/eth.png", // Replace with your image path or leave blank
     button1Label: "Github",
     button1Href: "https://github.com/Sserano24/CrowdX2-frontend.git"
@@ -32,7 +32,7 @@ const projects: Project[] = [
   },
   {
     title: "Mobile RC Car",
-    description: "I engineered a Bluetooth-controlled RC vehicle using an STM32 microcontroller programmed in Embedded C. The system integrates UART-based wireless communication to receive commands and dynamically modulates PWM signals to control both DC and servo motors in real time. I leveraged a UNIX terminal and an Analog Discovery Oscilloscope to debug and validate signal timing, connectivity, and motor responsiveness. This project demonstrates my hands-on experience in firmware development, embedded systems integration, and real-time motor control.",
+    description: "Built a Bluetooth-enabled RC vehicle using an STM32 microcontroller and Embedded C. Integrated UART communication to receive commands and modulate PWM signals for DC and servo motor control. Verified signal timing and motor response using a UNIX terminal and Analog Discovery Oscilloscope. Demonstrates skills in firmware development, UART, and real-time motor control.",
     image: "/microcontroller.png", 
     button1Label: "Ask A Question",
     button1Href: "/contact",
