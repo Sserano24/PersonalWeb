@@ -1,13 +1,11 @@
 "use client";
 
 import React, { useRef, useState } from "react";
-import Image from "next/image";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
 const HERO_IMG = "/circuit_nav.webp";     // make sure this exists in /public
-const SIDE_IMG = "/profilepic2.jpeg";    // replace with any image you want shown on the side
 
 export default function ContactPage() {
   const formRef = useRef<HTMLFormElement>(null);
