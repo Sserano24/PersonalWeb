@@ -1,7 +1,7 @@
 // app/resume/page.tsx
 import Link from "next/link";
 
-const RESUME_URL = "/Resume.pdf";       // Put Resume.pdf in /public
+const RESUME_URL = "/Saul_Serrano_Resume_Portfolio.pdf";       // Put Resume.pdf in /public
 const HERO_IMG   = "/Screenshot 2025-09-15 103242.png";  // Put circuit_nav.jpg in /public
 
 export default function ResumePage() {
@@ -41,7 +41,7 @@ export default function ResumePage() {
         {/* Embedded PDF */}
         <div className="mt-6 overflow-hidden rounded-xl border border-gray-200 shadow-sm">
           <iframe
-            title="Résumé PDF"
+            title="Resume PDF"
             src={`${RESUME_URL}#view=FitH&toolbar=0`}
             className="h-[calc(100vh-12rem)] w-full"
           />
