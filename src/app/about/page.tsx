@@ -31,19 +31,13 @@ export default function AboutPage() {
               Hi, I’m Saul.
             </h2>
             <p className="mt-4 text-base leading-7 text-gray-700 sm:text-lg sm:leading-8">
-              I&apos;m a student committed to continuous self-development, growth, and meaningful
-              connection. My goal is to become a thoughtful and humble leader—one who values
-              dedication, collaboration, and integrity.
+              Hello, my name is Saul Serrano. I’m a senior pursuing a B.S. in Computer Engineering, with a strong focus on building reliable, well-designed systems.
             </p>
             <p className="mt-4 text-base leading-7 text-gray-700 sm:text-lg sm:leading-8">
-              I&apos;m passionate about applying my diverse skill set to any role I take on,
-              especially in areas such as computer organization, cybersecurity awareness,
-              and the ethical application of artificial intelligence. I believe AI should be used
-              as a tool to enhance productivity and creativity—not to replace human potential.
+              I enjoy designing and building robotics projects—bringing together electronic components, embedded firmware, and software to create integrated, high-quality solutions.
             </p>
             <p className="mt-4 text-base leading-7 text-gray-700 sm:text-lg sm:leading-8">
-              Whether it&apos;s through technical challenges or team collaboration, I&apos;m driven
-              by purpose and eager to keep learning, building, and contributing.
+              I’m excited to be part of the generation advancing engineering with AI and am seeking roles where I can contribute to impactful products that push technology forward.
             </p>
 
             <div className="mt-8">
