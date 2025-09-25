@@ -39,13 +39,16 @@ const ProjectsGrid: React.FC<ProjectsGridProps> = ({ projects }) => {
             <div className="absolute inset-0">
               {project.image ? (
                 <Image
-                  src={project.image}
-                  alt={`${project.title} image`}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 33vw"
-                  className="object-cover"
-                  unoptimized
-                />
+                src={project.image}
+                alt={`${project.title} image`}
+                fill
+                sizes="(max-width: 1024px) 100vw, 33vw"
+                className="object-cover object-center"
+                unoptimized
+              />
+
+
+
               ) : (
                 <div className="h-full w-full bg-gradient-to-br from-gray-100 via-gray-200 to-gray-100" />
               )}

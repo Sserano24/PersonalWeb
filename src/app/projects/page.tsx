@@ -15,6 +15,29 @@ const projects: Project[] = [
 
 
   },
+    {
+    title: "Robot Dog",
+    description:
+      "An autonomous robot dog controlled by a RaspberryPi and AI. Built with a variety of sensors for data collection and servo motors for real world interactions.",
+    image: "/pidog.jpg",
+    button1Label: "Github",
+    //button1Href: "https://github.com/Sserano24/CrowdX2-frontend.git",
+    button1Href: "/RobotDOg",
+
+
+  },
+    {
+    title: "AI Email Agent",
+    description:
+      "An AI email assistant that identifies key topics and generates a reply automatically. It uses a list of containts and professional guidelines set by me.",
+    image: "/Ollama.png",
+    button1Label: "Github",
+    //button1Href: "https://github.com/Sserano24/CrowdX2-frontend.git",
+    button1Href: "/AIAgent",
+
+
+  },
+
   {
     title: "Stinger Sprint",
     description:

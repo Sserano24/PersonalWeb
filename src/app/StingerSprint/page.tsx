@@ -5,20 +5,20 @@ import Link from "next/link";
 export default function ProjectPage() {
   // --- Mock data (replace with real data fetched by slug/params) ---
   const project = {
-    title: "CrowdX",
-    tech: ["Python", "Javascript", "Next.js", "Django", "Tailwind CSS", "SQL",],
-    heroBg: "/crowdxss3.png", 
+    title: "Stinger Sprint",
+    tech: ["Python", "PyGame", "Jira", "Agile Software Development",],
+    heroBg: "/PyGame.png", 
     images: {
-      inlineLeft: "/crowdxss1.png",
-      inlineRight: "/crowdxss2.png",
+      inlineLeft: "/PyGame2.png",
+      inlineRight: "/PyGame1.png",
     },
   };
 
   const nextProject = {
-    slug: "RobotDog",
-    name: "Autonomous Robot Dog",
-    blurb: "AI powered robotics project built with RasberryPi",
-    bg: "/pidog.jpg",
+    slug: "OSDev",
+    name: "Operating System Development",
+    blurb: "A custom built Operating System built with C",
+    bg: "/command-line.jpg",
   };
 
   return (
@@ -28,7 +28,7 @@ export default function ProjectPage() {
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${project.heroBg}')`, backgroundSize: "103%" }}
+          style={{ backgroundImage: `url('${project.heroBg}')`, backgroundSize: "65%", backgroundPosition: "center 10%",}}
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/45" />
@@ -58,24 +58,23 @@ export default function ProjectPage() {
                 </header>
 
                 <p className="leading-relaxed text-gray-700">
-                CrowdX is a crowdfunding platform designed for students and recent graduates to
-                showcase their projects, raise funds through cryptocurrency or credit card
-                payments, and gain visibility with potential employers. Developed as my senior
-                design project at California State University, Sacramento, I am leading a team
-                of engineers to build this platform using modern technologies and industry best
-                practices. Our goal is to deliver a polished, secure, and scalable product with
-                an anticipated launch in November 2025.
-                </p>
+                For my software development project <i>Stinger Sprint</i>, I led a team to design and
+                implement a game using Python and the PyGame framework. The project was structured
+                around the Scrum methodology, with Jira used to manage sprints, user stories, and task
+                assignments. As team lead, I coordinated development efforts, facilitated sprint planning
+                meetings, and ensured progress stayed aligned with our goals and deadlines.
+              </p>
+
+              <p className="leading-relaxed text-gray-700">
+                Throughout the project, we applied agile practices to iteratively build and refine game
+                features, ranging from core gameplay mechanics to user interface design. By fostering
+                collaboration and emphasizing clear communication, I guided the team in overcoming
+                technical challenges and delivering an engaging game. The experience deepened my understanding
+                of agile workflows, and
+                highlighted the value of structured project management in software engineering.
+              </p>
 
 
-                <p className="leading-relaxed text-gray-700">
-                Beyond funding, CrowdX is designed to act as a bridge between academia and
-                industry. By enabling creators to present their work in a professional, portfolio-style
-                format while simultaneously connecting with backers and recruiters, the platform
-                provides both financial support and career opportunities. This dual purpose not only
-                empowers students to bring their ideas to life but also helps employers discover
-                emerging talent ready to make an impact.
-                </p>
 
 
                 {/* Primary image */}
@@ -84,7 +83,8 @@ export default function ProjectPage() {
                 src={project.images.inlineLeft ?? "/project-primary.png"}
                 alt="Primary project screenshot (replace)"
                 fill
-                className="object-cover object-[center_10%]"
+                className="object-cover scale-100 object-[center_90%]"
+                style={{ objectPosition: "center" }}
                 />
 
                 </figure>
@@ -139,7 +139,7 @@ export default function ProjectPage() {
 
         {/* Optional preview card under the divider */}
         <Link
-          href={nextProject.slug}
+          href= {nextProject.slug}
           className="mt-6 block overflow-hidden rounded-2xl border"
         >
           <div

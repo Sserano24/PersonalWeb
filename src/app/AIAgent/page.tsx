@@ -5,20 +5,20 @@ import Link from "next/link";
 export default function ProjectPage() {
   // --- Mock data (replace with real data fetched by slug/params) ---
   const project = {
-    title: "CrowdX",
-    tech: ["Python", "Javascript", "Next.js", "Django", "Tailwind CSS", "SQL",],
-    heroBg: "/crowdxss3.png", 
+    title: "AI Email Agent",
+    tech: ["Python", "LangChain", "LLM", "Ollama", "Jupiter Notebooks"],
+    heroBg: "/EmailAI.png", 
     images: {
-      inlineLeft: "/crowdxss1.png",
-      inlineRight: "/crowdxss2.png",
+      inlineLeft: "/EmailAICode.png",
+      inlineRight: "/EmailAI.jpg",
     },
   };
 
   const nextProject = {
-    slug: "RobotDog",
-    name: "Autonomous Robot Dog",
-    blurb: "AI powered robotics project built with RasberryPi",
-    bg: "/pidog.jpg",
+    slug: "/StingerSprint",
+    name: "StingerSprint",
+    blurb: "A video game developed in Python via Pygame",
+    bg: "/PyGame.png",
   };
 
   return (
@@ -28,7 +28,7 @@ export default function ProjectPage() {
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${project.heroBg}')`, backgroundSize: "103%" }}
+          style={{ backgroundImage: `url('${project.heroBg}')`, backgroundSize: "85%" }}
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/45" />
@@ -58,24 +58,17 @@ export default function ProjectPage() {
                 </header>
 
                 <p className="leading-relaxed text-gray-700">
-                CrowdX is a crowdfunding platform designed for students and recent graduates to
-                showcase their projects, raise funds through cryptocurrency or credit card
-                payments, and gain visibility with potential employers. Developed as my senior
-                design project at California State University, Sacramento, I am leading a team
-                of engineers to build this platform using modern technologies and industry best
-                practices. Our goal is to deliver a polished, secure, and scalable product with
-                an anticipated launch in November 2025.
+                  Built an AI Email Agent powered by Ollama, LangChain, and Python. 
+                  Developed rapidly in Jupyter Notebooks, it runs locally for privacy, classifies incoming emails, 
+                  summarizes key points, extracts action items and deadlines, and drafts reply suggestions—all in seconds.
                 </p>
-
 
                 <p className="leading-relaxed text-gray-700">
-                Beyond funding, CrowdX is designed to act as a bridge between academia and
-                industry. By enabling creators to present their work in a professional, portfolio-style
-                format while simultaneously connecting with backers and recruiters, the platform
-                provides both financial support and career opportunities. This dual purpose not only
-                empowers students to bring their ideas to life but also helps employers discover
-                emerging talent ready to make an impact.
+                  The agent uses a modular LangChain pipeline to triage messages into
+                  categories, identifies key topics, and generates responses. I developed this to help people
+                  who recieve constant emails and need to remain up to date with Email threads.
                 </p>
+
 
 
                 {/* Primary image */}
@@ -146,8 +139,8 @@ export default function ProjectPage() {
             className="relative h-44 w-full bg-cover bg-center"
             style={{
             backgroundImage: `url('${nextProject.bg ?? "/bgprojects.png"}')`,
-            backgroundPosition: "center 18%",
-            backgroundSize: "100%", // zoomed out a little
+            backgroundPosition: "center 50%",
+            backgroundSize: "70%", // zoomed out a little
             }}
 
             aria-label={`Preview for ${nextProject.name}`}

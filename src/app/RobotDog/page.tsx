@@ -5,20 +5,20 @@ import Link from "next/link";
 export default function ProjectPage() {
   // --- Mock data (replace with real data fetched by slug/params) ---
   const project = {
-    title: "CrowdX",
-    tech: ["Python", "Javascript", "Next.js", "Django", "Tailwind CSS", "SQL",],
-    heroBg: "/crowdxss3.png", 
+    title: "Robot Dog",
+    tech: ["Python", "RaspberryPi", "Artificial Intelligence", "Git",],
+    heroBg: "/pidog.jpg", 
     images: {
-      inlineLeft: "/crowdxss1.png",
-      inlineRight: "/crowdxss2.png",
+      inlineLeft: "/pidog2.webp",
+      inlineRight: "/pidog3.jpeg",
     },
   };
 
   const nextProject = {
-    slug: "RobotDog",
-    name: "Autonomous Robot Dog",
-    blurb: "AI powered robotics project built with RasberryPi",
-    bg: "/pidog.jpg",
+    slug: "/AIAgent",
+    name: "AI Email Assistant",
+    blurb: "Personal AI assistant incharge of emails.",
+    bg: "/EmailAI.png",
   };
 
   return (
@@ -28,7 +28,7 @@ export default function ProjectPage() {
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${project.heroBg}')`, backgroundSize: "103%" }}
+          style={{ backgroundImage: `url('${project.heroBg}')`, backgroundSize: "65%", backgroundPosition: "center 10%",}}
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/45" />
@@ -58,24 +58,22 @@ export default function ProjectPage() {
                 </header>
 
                 <p className="leading-relaxed text-gray-700">
-                CrowdX is a crowdfunding platform designed for students and recent graduates to
-                showcase their projects, raise funds through cryptocurrency or credit card
-                payments, and gain visibility with potential employers. Developed as my senior
-                design project at California State University, Sacramento, I am leading a team
-                of engineers to build this platform using modern technologies and industry best
-                practices. Our goal is to deliver a polished, secure, and scalable product with
-                an anticipated launch in November 2025.
+                For my robotics capstone project, I am leading a team to build and program a
+                robotic dog powered by a Raspberry Pi. The platform integrates motor drivers,
+                sensors, and servo controllers to enable precise movement and responsive
+                control. Our goal is to autotomate movement with the use of Artificial Intelligence
                 </p>
-
 
                 <p className="leading-relaxed text-gray-700">
-                Beyond funding, CrowdX is designed to act as a bridge between academia and
-                industry. By enabling creators to present their work in a professional, portfolio-style
-                format while simultaneously connecting with backers and recruiters, the platform
-                provides both financial support and career opportunities. This dual purpose not only
-                empowers students to bring their ideas to life but also helps employers discover
-                emerging talent ready to make an impact.
+                The project incorporates computer vision and AI, allowing the robot to perceive
+                its environment and adapt its behavior in real time. We developed modular
+                control software to handle gait sequencing, servo coordination, and continuous
+                sensor data processing, enabling the robot to move autonomously based on the
+                world it sees. This foundation not only supports experimentation with advanced
+                AI-driven robotics but also prepares the system for our planned participation
+                in an autonomous robot dog competition at the end of 2025.
                 </p>
+
 
 
                 {/* Primary image */}
@@ -84,7 +82,8 @@ export default function ProjectPage() {
                 src={project.images.inlineLeft ?? "/project-primary.png"}
                 alt="Primary project screenshot (replace)"
                 fill
-                className="object-cover object-[center_10%]"
+                className="object-cover scale-100 object-[center_90%]"
+                style={{ objectPosition: "center" }}
                 />
 
                 </figure>

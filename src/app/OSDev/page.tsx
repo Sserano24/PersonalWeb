@@ -5,20 +5,20 @@ import Link from "next/link";
 export default function ProjectPage() {
   // --- Mock data (replace with real data fetched by slug/params) ---
   const project = {
-    title: "CrowdX",
-    tech: ["Python", "Javascript", "Next.js", "Django", "Tailwind CSS", "SQL",],
-    heroBg: "/crowdxss3.png", 
+    title: "OS Development",
+    tech: ["C Programming Language", "UNIX", "GitHub",],
+    heroBg: "/command-line.jpg", 
     images: {
-      inlineLeft: "/crowdxss1.png",
-      inlineRight: "/crowdxss2.png",
+      inlineLeft: "/OSDev.webp",
+      inlineRight: "/GitHub.jpg",
     },
   };
 
   const nextProject = {
-    slug: "RobotDog",
-    name: "Autonomous Robot Dog",
-    blurb: "AI powered robotics project built with RasberryPi",
-    bg: "/pidog.jpg",
+    slug: "Mimikatz",
+    name: "Malware Detection",
+    blurb: "An automated Security Operation Center style malware detector",
+    bg: "/SOC.png",
   };
 
   return (
@@ -28,7 +28,7 @@ export default function ProjectPage() {
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${project.heroBg}')`, backgroundSize: "103%" }}
+          style={{ backgroundImage: `url('${project.heroBg}')`, backgroundSize: "110%" }}
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/45" />
@@ -58,24 +58,22 @@ export default function ProjectPage() {
                 </header>
 
                 <p className="leading-relaxed text-gray-700">
-                CrowdX is a crowdfunding platform designed for students and recent graduates to
-                showcase their projects, raise funds through cryptocurrency or credit card
-                payments, and gain visibility with potential employers. Developed as my senior
-                design project at California State University, Sacramento, I am leading a team
-                of engineers to build this platform using modern technologies and industry best
-                practices. Our goal is to deliver a polished, secure, and scalable product with
-                an anticipated launch in November 2025.
+                For my Operating Systems project, I led a team to design and implement a custom
+                operating system in C from the ground up. The system incorporated essential OS
+                concepts such as process creation, context switching, memory management, and
+                user I/O handling. Developed within a virtualized Linux environment, the project
+                transformed theoretical coursework into practical implementation through phased
+                development milestones.
                 </p>
-
 
                 <p className="leading-relaxed text-gray-700">
-                Beyond funding, CrowdX is designed to act as a bridge between academia and
-                industry. By enabling creators to present their work in a professional, portfolio-style
-                format while simultaneously connecting with backers and recruiters, the platform
-                provides both financial support and career opportunities. This dual purpose not only
-                empowers students to bring their ideas to life but also helps employers discover
-                emerging talent ready to make an impact.
+                As team lead, I coordinated version control with Git/GitHub and spearheaded
+                kernel-level debugging using GDB, ensuring stability and reliability of the system.
+                This project not only strengthened my low-level programming and systems
+                engineering skills but also deepened my ability to manage collaborative software
+                development in a complex, technical domain.
                 </p>
+
 
 
                 {/* Primary image */}
@@ -146,7 +144,7 @@ export default function ProjectPage() {
             className="relative h-44 w-full bg-cover bg-center"
             style={{
             backgroundImage: `url('${nextProject.bg ?? "/bgprojects.png"}')`,
-            backgroundPosition: "center 18%",
+            backgroundPosition: "center 40%",
             backgroundSize: "100%", // zoomed out a little
             }}
 
