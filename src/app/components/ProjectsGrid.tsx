@@ -44,6 +44,9 @@ const ProjectsGrid: React.FC<ProjectsGridProps> = ({ projects }) => {
                 fill
                 sizes="(max-width: 1024px) 100vw, 33vw"
                 className="object-cover object-center"
+                style={{
+                  objectPosition: project.title === "Mobile RC Car" ? "80% center" : "center",
+                }}
                 unoptimized
               />
 
@@ -58,14 +61,17 @@ const ProjectsGrid: React.FC<ProjectsGridProps> = ({ projects }) => {
 
             {/* Content */}
             <div className="absolute inset-x-0 bottom-0 z-10 p-5">
-              <h3 className="text-lg font-semibold text-gray-900">
-                {project.title}
-              </h3>
+              <h3
+              className="text-lg font-semibold text-gray-900 opacity-0 invisible transition-all duration-300 group-hover:visible group-hover:opacity-100"
+            >
+              {project.title}
+            </h3>
 
-              {/* DESCRIPTION: hidden until hover (no space taken) */}
-              <p className="mt-2 text-sm text-gray-700 opacity-0 invisible max-h-0 overflow-hidden transition-all duration-300 group-hover:visible group-hover:opacity-100 group-hover:max-h-40">
-                {project.description}
-              </p>
+            {/* DESCRIPTION: hidden until hover (no space taken) */}
+            <p className="mt-2 text-sm text-gray-700 opacity-0 invisible max-h-0 overflow-hidden transition-all duration-300 group-hover:visible group-hover:opacity-100 group-hover:max-h-40">
+              {project.description}
+            </p>
+
 
               {/* CTA: hidden until hover (no space taken) */}
               <span className="mt-3 inline-flex items-center text-sm font-medium text-blue-700 opacity-0 invisible transition-opacity duration-300 group-hover:visible group-hover:opacity-100">

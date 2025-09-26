@@ -62,21 +62,21 @@ const projects: Project[] = [
       "A cloud-based security lab using Wazuh SIEM, The Hive, and Shuffle for automated threat detection and response. Integrated SOC workflows, reduced manual triage time, and documented architecture for applied cybersecurity and cloud concepts.",
     image: "/SOC.png",
     button1Label: "Ask A Question",
-    button1Href: "/Security",
+    button1Href: "/Mimikatz",
   },
   {
     title: "Mobile RC Car",
     description:
       "Built a Bluetooth-enabled RC vehicle using an STM32 microcontroller and Embedded C. Integrated UART communication to receive commands and modulate PWM signals for DC and servo motor control. Verified signal timing and motor response using a UNIX terminal and Analog Discovery Oscilloscope.",
-    image: "/microcontroller.png",
+    image: "/STM5.webp",
     button1Label: "Ask A Question",
-    button1Href: "/EmbeddedDesign",
+    button1Href: "/STM",
   },
   {
     title: "Arithmentic Logic Untit",
     description:
       "Designed an 8-bit ALU in Cadence using 45nm CMOS, implementing custom layouts for adders, logic gates, and multipliers. Verified DRC/LVS compliance and optimized for performance and physical layout constraints.",
-    image: "/ALU.png",
+    image: "/ALU2.png",
     button1Label: "Ask A Question",
     button1Href: "/ALU",
   },

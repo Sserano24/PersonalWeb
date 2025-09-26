@@ -28,7 +28,7 @@ export default function ProjectPage() {
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${project.heroBg}')`, backgroundSize: "85%" }}
+          style={{ backgroundImage: `url('${project.heroBg}')`, backgroundSize: "35%" }}
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/45" />

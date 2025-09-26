@@ -5,20 +5,20 @@ import Link from "next/link";
 export default function ProjectPage() {
   // --- Mock data (replace with real data fetched by slug/params) ---
   const project = {
-    title: "Security Operation Center",
-    tech: ["Malware Detection", "Security and Event Management (SIEM)", "Case Management", "Cloud Infastructure","Security Orchestration Automation and Response (SOAR)"],
-    heroBg: "/Mimikatz.png", 
+    title: "ST Micro Car",
+    tech: ["Embedded C", "ST Microcontroller", "STM IDE", "Team Lead",],
+    heroBg: "/STM4.jpg", 
     images: {
-      inlineLeft: "/Wazuh.png",
-      inlineRight: "/SOC1.png",
+      inlineLeft: "/STM3.png",
+      inlineRight: "/STM.jpg",
     },
   };
 
   const nextProject = {
-    slug: "STM",
-    name: "ST Micro Car",
-    blurb: "An RC Car controlled by ST Microprocessor and C programming language",
-    bg: "/STM2.png",
+    slug: "ALU",
+    name: "Arithmetic Logic Unit",
+    blurb: "An 8 bit ALU developed in 45nm CMOS technology",
+    bg: "/ALU3.png",
   };
 
   return (
@@ -28,7 +28,7 @@ export default function ProjectPage() {
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${project.heroBg}')`, backgroundSize: "90%", backgroundPosition: "60% center",  }}
+          style={{ backgroundImage: `url('${project.heroBg}')`, backgroundSize: "70%", backgroundPosition: "center 10%",}}
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/45" />
@@ -58,18 +58,24 @@ export default function ProjectPage() {
                 </header>
 
                 <p className="leading-relaxed text-gray-700">
-                  For my cybersecurity project, I created a home security lab in the cloud to practice how real
-                  companies detect and respond to threats. I set up virtual computers on DigitalOcean and connected
-                  them with tools that automatically spot suspicious activity and send alerts, helping reduce the
-                  amount of time people would normally spend investigating issues by hand.
+                In this project I led a team to design and
+                implement a bluetooth-controlled car powered by an STM32 microprocessor. Using Embedded C, we
+                developed software to controll with hardware components including motors, servos, and bluetooth receivers. My role included
+                directing collaborative design decisions, coordinating task assignments, and ensuring reliable
+                hardware-software integration throughout the project timeline.
                 </p>
 
                 <p className="leading-relaxed text-gray-700">
-                  To make the system more effective, I added case tracking and automation features so that alerts
-                  could be organized, investigated, and resolved more quickly. I also put together clear diagrams
-                  and documentation to explain how everything works, showing how cloud technology and automation can
-                  strengthen cybersecurity defenses.
+                The system leveraged UART-based serial communication to interpret commands from a mobile device
+                and modulated PWM signals to achieve real-time motor actuation. To verify performance and
+                reliability, we troubleshot integration challenges using a UNIX terminal and oscilloscope,
+                carefully analyzing connectivity, timing, and signal behavior. This experience strengthened my
+                expertise in embedded programming, microcontroller communication protocols, and cross-disciplinary
+                teamwork in developing functional mechatronic systems.
                 </p>
+
+
+
 
 
                 {/* Primary image */}
@@ -78,7 +84,8 @@ export default function ProjectPage() {
                 src={project.images.inlineLeft ?? "/project-primary.png"}
                 alt="Primary project screenshot (replace)"
                 fill
-                className="object-cover object-[center_10%]"
+                className="object-cover object-center"
+                style={{ objectPosition: "center" }}
                 />
 
                 </figure>
@@ -122,7 +129,7 @@ export default function ProjectPage() {
           <div className="mx-auto -mt-4 flex w-full max-w-md items-center justify-center gap-2 rounded-full border bg-white px-5 py-2 text-sm shadow-sm">
             <span className="text-gray-600">Next project:</span>
             <Link
-              href={nextProject.slug}
+              href={`/projects/${nextProject.slug}`}
               className="group inline-flex items-center gap-2 font-medium text-gray-900"
             >
               <span>{nextProject.name}</span>
@@ -133,15 +140,15 @@ export default function ProjectPage() {
 
         {/* Optional preview card under the divider */}
         <Link
-          href={nextProject.slug}
+          href= {nextProject.slug}
           className="mt-6 block overflow-hidden rounded-2xl border"
         >
           <div
             className="relative h-44 w-full bg-cover bg-center"
             style={{
             backgroundImage: `url('${nextProject.bg ?? "/bgprojects.png"}')`,
-            backgroundPosition: "center 40%",
-            backgroundSize: "40%", // zoomed out a little
+            backgroundPosition: "center 35%",
+            backgroundSize: "100%", // zoomed out a little
             }}
 
             aria-label={`Preview for ${nextProject.name}`}

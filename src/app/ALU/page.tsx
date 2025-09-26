@@ -5,20 +5,20 @@ import Link from "next/link";
 export default function ProjectPage() {
   // --- Mock data (replace with real data fetched by slug/params) ---
   const project = {
-    title: "Security Operation Center",
-    tech: ["Malware Detection", "Security and Event Management (SIEM)", "Case Management", "Cloud Infastructure","Security Orchestration Automation and Response (SOAR)"],
-    heroBg: "/Mimikatz.png", 
+    title: "Arithmetic Logic Unit",
+    tech: ["Cadence Virtuoso", "CMOS Circuit Design"],
+    heroBg: "/ALU6.png", 
     images: {
-      inlineLeft: "/Wazuh.png",
-      inlineRight: "/SOC1.png",
+      inlineLeft: "/ALU3.png",
+      inlineRight: "/ALU4.png",
     },
   };
 
   const nextProject = {
-    slug: "STM",
-    name: "ST Micro Car",
-    blurb: "An RC Car controlled by ST Microprocessor and C programming language",
-    bg: "/STM2.png",
+    slug: "CrowdX",
+    name: "CrowdX",
+    blurb: "A new age crowfunding platform for students to share their work, collect funding, and be discovered",
+    bg: "/eth.png",
   };
 
   return (
@@ -28,7 +28,7 @@ export default function ProjectPage() {
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url('${project.heroBg}')`, backgroundSize: "90%", backgroundPosition: "60% center",  }}
+          style={{ backgroundImage: `url('${project.heroBg}')`, backgroundSize: "92%", backgroundPosition: "center 50%",}}
         />
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/45" />
@@ -58,30 +58,35 @@ export default function ProjectPage() {
                 </header>
 
                 <p className="leading-relaxed text-gray-700">
-                  For my cybersecurity project, I created a home security lab in the cloud to practice how real
-                  companies detect and respond to threats. I set up virtual computers on DigitalOcean and connected
-                  them with tools that automatically spot suspicious activity and send alerts, helping reduce the
-                  amount of time people would normally spend investigating issues by hand.
+                In this project I designed and implemented an 8-bit Arithmetic Logic Unit (ALU) using 45nm CMOS
+                technology within Cadence Virtuoso. <i> An ALU is a digital circuit within a computers CPU that performs fundamental arithmentic</i> The work involved creating custom schematics and physical
+                layouts for core digital components such as logic gates, full adders, subtractors, and multipliers,
+                ensuring that the ALU could reliably perform a variety of arithmetic and logical operations.
                 </p>
 
                 <p className="leading-relaxed text-gray-700">
-                  To make the system more effective, I added case tracking and automation features so that alerts
-                  could be organized, investigated, and resolved more quickly. I also put together clear diagrams
-                  and documentation to explain how everything works, showing how cloud technology and automation can
-                  strengthen cybersecurity defenses.
+                To validate the design, I carried out extensive verification steps, successfully passing both
+                Design Rule Check (DRC) and Layout Versus Schematic (LVS) reports to confirm physical and logical
+                consistency. This project deepened my understanding of digital circuit design, CMOS layout
+                constraints, and performance optimization, while reinforcing practical skills in using industry
+                standard EDA tools for VLSI development.
                 </p>
 
 
-                {/* Primary image */}
-                <figure className="relative aspect-[16/9] overflow-hidden rounded-2xl border bg-gray-100">
-                <Image
-                src={project.images.inlineLeft ?? "/project-primary.png"}
-                alt="Primary project screenshot (replace)"
-                fill
-                className="object-cover object-[center_10%]"
-                />
 
+
+
+                {/* Primary image */}
+                <figure className="relative w-[800px] h-[500px] overflow-hidden rounded-2xl border bg-gray-100">
+                <Image
+                    src={project.images.inlineLeft ?? "/project-primary.png"}
+                    alt="Primary project screenshot (replace)"
+                    fill
+                    className="object-fill object-center"
+                />
                 </figure>
+
+
             </div>
 
             {/* Right: key skills + optional secondary image */}
@@ -122,7 +127,7 @@ export default function ProjectPage() {
           <div className="mx-auto -mt-4 flex w-full max-w-md items-center justify-center gap-2 rounded-full border bg-white px-5 py-2 text-sm shadow-sm">
             <span className="text-gray-600">Next project:</span>
             <Link
-              href={nextProject.slug}
+              href={`/projects/${nextProject.slug}`}
               className="group inline-flex items-center gap-2 font-medium text-gray-900"
             >
               <span>{nextProject.name}</span>
@@ -133,15 +138,15 @@ export default function ProjectPage() {
 
         {/* Optional preview card under the divider */}
         <Link
-          href={nextProject.slug}
+          href= {nextProject.slug}
           className="mt-6 block overflow-hidden rounded-2xl border"
         >
           <div
             className="relative h-44 w-full bg-cover bg-center"
             style={{
             backgroundImage: `url('${nextProject.bg ?? "/bgprojects.png"}')`,
-            backgroundPosition: "center 40%",
-            backgroundSize: "40%", // zoomed out a little
+            backgroundPosition: "center 20%",
+            backgroundSize: "100%", // zoomed out a little
             }}
 
             aria-label={`Preview for ${nextProject.name}`}
