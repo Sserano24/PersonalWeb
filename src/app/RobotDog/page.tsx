@@ -127,7 +127,7 @@ export default function ProjectPage() {
           <div className="mx-auto -mt-4 flex w-full max-w-md items-center justify-center gap-2 rounded-full border bg-white px-5 py-2 text-sm shadow-sm">
             <span className="text-gray-600">Next project:</span>
             <Link
-              href={`/projects/${nextProject.slug}`}
+              href= {nextProject.slug}
               className="group inline-flex items-center gap-2 font-medium text-gray-900"
             >
               <span>{nextProject.name}</span>
