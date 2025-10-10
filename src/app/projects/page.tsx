@@ -22,7 +22,7 @@ const projects: Project[] = [
     image: "/pidog.jpg",
     button1Label: "Github",
     //button1Href: "https://github.com/Sserano24/CrowdX2-frontend.git",
-    button1Href: "/RobotDOg",
+    button1Href: "/RobotDog",
 
 
   },

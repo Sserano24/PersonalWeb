@@ -211,7 +211,7 @@ export default function Home() {
                               alt={item.imageAlt || "Timeline image"}
                               width={960}
                               height={540}
-                              className="h-auto w-full object-cover"
+                              className="h-auto w-full object-cover [image-orientation:from-image]"
                               unoptimized
                             />
                           </div>
